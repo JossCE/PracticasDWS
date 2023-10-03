@@ -1,0 +1,57 @@
+/*CRUZ ENRIQUEZ JOSSELIN*/
+*{
+    text-align: center;
+}
+header, nav, footer{
+    width: 70%;
+    height: 50px;
+    background-color: rgb(151, 134, 113);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#contenedor{
+    width: 70%;
+    height: 350px;   
+    display: flex;
+}
+
+section{
+    width: 65%;
+    height: 350px;
+    background-color: rgb(151, 134, 113);
+    padding-top: 10px;
+    padding-left: 29px;
+    border-radius: 10px;
+}
+
+aside{
+    width: 30%;
+    height: 350px;
+    background-color: rgb(151, 134, 113);
+    display: block;
+    padding-left: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+aside article{
+    width: 90%;
+    height: 90px;
+    border-radius: 10px;
+}
+
+article{
+    width: 90%;
+    height: 45px;
+    background-color: rgb(221, 216, 210);
+    margin: 1px;
+    margin-top: 60px;
+    border-radius: 10px;
+}
+
+
+footer{
+    margin-top: 20px;
+}
+
