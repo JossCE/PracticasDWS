@@ -1,0 +1,47 @@
+h1, h2{
+    text-align: center;
+    color: rgb(6, 61, 212);
+}
+
+.cont1{
+    font-size: 10cm;
+}
+.cont2{
+    
+    font-size: 10mm;
+}
+.cont3{
+    font-size: 10in;
+}
+.cont4{
+    font-size: 10px;
+}
+.cont5{
+    font-size: 10pt;
+}
+.cont6{
+    font-size: 10pc;
+}
+
+.cont7{
+    font-size: 10em;
+}
+.cont8{
+    font-size: 10ex;
+}
+.cont9{
+    font-size: 10rem;
+}
+
+.cont10{
+    font-size: 10vw;
+}
+.cont11{
+    font-size: 10vh;
+}
+.cont12{
+    font-size: 10vmin;
+}
+.cont13{
+    font-size: 10vmax;
+}
