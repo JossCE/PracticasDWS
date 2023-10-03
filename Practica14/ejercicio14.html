@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla y Formularios</title>
+</head>
+<body>
+    <h1>Formulario de Registro</h1>
+        <form action="" method="get">
+            <table >
+                <tr>
+                    <td>Nombre: </td>
+                    <td><input type="text" required maxlength="15" placeholder="Ingresa nombre"></td>
+                </tr>
+                <tr>
+                    <td>Apellidos: </td>
+                    <td><input type="text" required placeholder="Ingresa apellidos"></td>
+                </tr>
+                <tr>
+                    <td>Sexo: </td>
+                    <td><input type="radio" name="op"> <label for="op">Hombre </label> 
+                        <input type="radio" name="op"><label for="op">Mujer</label> <br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Correo: </td>
+                    <td><input type="email" required placeholder="Ingresa correo"></td>
+                </tr>
+                <tr>
+                    <td>Poblacion: </td>
+                    <td><select name="poblacion" required> <br> <br>
+                            <option value="1">Mexico</option> 
+                            <option value="2">Estados Unidos</option> 
+                            <option value="2">Canada</option> 
+                            <option value="2">España</option> 
+                            <option value="2">Argentina</option> 
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="acepto" checked> </td>
+                    <td>Deseo recibir informacion sobre novedades y ofertas</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="acepto2" required></td>
+                    <td> Declaro haber leido y acepar las condicionesgenerales del programa y la normativa sobre proteccion de datos</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="ENVIAR"></td>
+                </tr>
+            </table>
+        </form>
+     <!-- Cruz Enriquez Josselin--> 
+</body>
+</html>
