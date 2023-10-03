@@ -1,0 +1,64 @@
+/* Estilo universal para la pgaina, colca margen entre los elementos*/
+*{
+    margin: .2%;
+    border-radius: 10px 10px 10px 10px
+}
+
+/* Estilo para el encabezado */
+header{
+    background-color: green; /* Color de fondo*/
+    border-style: solid; /* Mostrar borde del elemento*/
+    border-color: grey; /* Color de borde*/
+    height: 8em; /* Altura del elemento*/
+
+}
+
+/* Estilo para el nav*/
+nav{
+    background-color: greenyellow; /* Color de fondo*/
+    border-style: solid; /* Mostrar borde del elemento*/
+    border-color: grey; /* Color de borde*/
+    height: 5em; /* Altura del elemento*/
+}
+
+/* Estilo para el contendor */
+#contenedor{
+    display: flex; /* Posisionamento de los elementos que se encuentran dentro del contenedor*/
+    height: 45em; /* Altura del elemento*/
+}
+
+/* Estilo para el aside*/
+aside{
+    background-color: green; /* Color de fondo*/
+    border-style: solid; /* Mostrar borde del elemento*/
+    border-color: grey; /* Color de borde*/
+    width: 70em; /* Ancho del elemento*/
+}
+
+/* Estilo para el section*/
+section{
+    background-color: green; /* Color de fondo*/
+    border-style: solid; /* Mostrar borde del elemento*/
+    border-color: grey; /* Color de borde*/
+    width: 70em; /* Ancho del elemento*/
+
+}
+
+/* Estilo para el article*/
+article{
+    background-color: greenyellow; /* Color de fondo*/
+    border-style: solid; /* Mostrar borde del elemento*/
+    border-color: grey; /* Color de borde*/
+    margin-top: 16%; /* Distancia del margen superior del elemento*/
+    width: 85%; /* Ancho del elemento*/
+    height: 20%; /* Altura del elemento*/
+}
+
+/* Estilo para el footer*/
+footer{
+    background-color: green; /* Color de fondo*/
+    border-style: solid; /* Mostrar borde del elemento*/
+    border-color: grey; /* Color de borde*/
+    height: 4em; /* Altura del elemento*/
+
+}
