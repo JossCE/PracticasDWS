@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>7 MARAVILLAS DEL MUNDO</title>
+    <link rel="stylesheet" href="../Maravilllas/css/7maravillas.css"/>
+    <script type="text/javascript" src="../Maravilllas/js/7maravillas.js"> </script>
+
+</head>
+<body>
+    <header>7 MARAVILLAS DEL MUNDO</header>
+    <h1>¿Qué Maravilla del mundo es?</h1>
+
+    <!-- Pantalla inicial, miestra la pantalla de inciop de juego-->
+    <div id="pantalla-inicial">
+        <p>¿A qué maravilla pertenece la imagen?</p>
+        <button class="btn" onclick="comenzarJuego()">JUGAR</button>
+    </div>
+
+    <!-- Pantalla juego, muestra la imagen y las opciones-->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/chichen-itza.svg" alt="" id="imgMaravilla">
+         <!-- Carga las imagenes y sus opciones para comprobar si la opcion seleccionada es correcta-->
+        <div class="opciones">
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final muestra el resultado final de acierto -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <footer>7 MARAVILLAS DEL MUNDO</footer>
+      <!--Cruz Enriquez Josselin-->
+    <!--<script src="7maravillas.js"></script>-->
+</body>
+</html>
