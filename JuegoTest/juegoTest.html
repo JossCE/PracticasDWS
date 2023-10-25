@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>ADIVINA LA SERIE</title>
+    <link rel="stylesheet" href="../JuegoTest/css/juegoTest.css"/>
+    <script type="text/javascript" src="../JuegoTest/js/juegoTest.js"> </script>
+
+</head>
+<body>
+    <header>A D I V I N A R</header>
+    <h1>¿Que quieres Jugar?</h1>
+
+    <!-- Pantalla inicial, miestra la pantalla de inciop de juego-->
+    <div id="pantalla-inicial">
+        <p>Elige una opcion</p>
+        <button class="btn" onclick="comenzarJuego()"> <h2> Series</h2></button> <br><br>
+        <a class="btn" href="../Maravilllas/7maravillas.html"> 7 Maravillas</a>
+    </div>
+
+    <!-- Pantalla juego, muestra la imagen y las opciones-->
+    <div class="pantalla-juego" id="pantalla-juego">
+        <img src="img/anne.svg" alt="" id="imgSerie">
+        <!-- Contiene el contenedor de las imagenes-->
+        <div class="opciones">
+            <!-- Muestra la opcion a elegir y comprueba si es correcta al momento de dar clik-->
+            <div class="opcion" id="op0" onclick="comprobarRespuesta(0)">
+                <div class="letra" id="l0">A</div>
+                <div class="nombre" id="n0">OPCION A</div>
+            </div>
+            <!-- Muestra la opcion a elegir y comprueba si es correcta al momento de dar clik-->
+            <div class="opcion" id="op1" onclick="comprobarRespuesta(1)">
+                <div class="letra" id="l1">B</div>
+                <div class="nombre" id="n1">OPCION B</div>
+            </div>
+            <!-- Muestra la opcion a elegir y comprueba si es correcta al momento de dar clik-->
+            <div class="opcion" id="op2" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l2">C</div>
+                <div class="nombre" id="n2">OPCION C</div>
+            </div>
+            <!-- Muestra la opcion a elegir y comprueba si es correcta al momento de dar clik-->
+            <div class="opcion" id="op3" onclick="comprobarRespuesta(2)">
+                <div class="letra" id="l3">C</div>
+                <div class="nombre" id="n3">OPCION C</div>
+            </div>
+        </div>
+    </div>
+    <!-- Pantalla final muestra el resultado final de acierto -->
+    <div id="pantalla-final">
+        <h2>CORRECTAS: <span id="numCorrectas">3</span></h2>
+        <h2>INCORRECTAS: <span id="numIncorrectas">2</span></h2>
+        <button class="btn" onclick="volverAlInicio()">VOLVER AL INICIO</button>
+    </div>
+
+    <footer> SERIES POPULARES</footer>
+      <!--Cruz Enriquez Josselin-->
+    <!--<script src="7maravillas.js"></script>-->
+</body>
+</html>
