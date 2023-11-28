@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado HTML -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../historia/scss/historia.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>   
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ 
+    <title>Historia</title>
+</head>
+<body data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark text-dark">
+    <!-- Contenedor de la barra de navegación -->
+    <div class="container-fluid d-flex justify-content-between">
+        <!-- Enlaces a la izquierda -->
+        <ul class="navbar-nav">
+            <li class="nav-item text-start">
+                <!-- Enlace activo de la página actual -->
+                <a class="nav-link active text-light fs-2 ms-1 nav-link-tailandia" aria-current="page" href="../home/inicio.php">Tailandia</a>
+            </li>
+        </ul>
+
+        <!-- Enlaces centrados -->
+        <div class="card rounded-pill text-center mt-2 card1">
+            <div class="card-body" style="background-color: transparent;">
+                <!-- Enlaces de la barra de navegación -->
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../comida/comida.html">Comida</a>
+                <a class="navbar-brand text-light fs-2 me-5 ms-5" href="../historia/historia.html">Historia</a>
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../clima/clima.html">Clima</a>
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../destinos/destinos.html">Destinos</a>
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../contacto/contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <!-- Enlaces a la derecha -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <!-- Botón de registro con animación -->
+                <a class="nav-link text-light" href="../registro/registro.php">
+                    <button class="btn btn-light rounded-pill animate__animated animate__heartBeat animate__delay-2s" style="width: 10em"><label class="fs-5 fw-semibold">Registrarse</label></button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Título de la página -->
+<h1 style="font-size: 100px;"  class="fw-bolder text-light text-center titulo ">Historia</h1><br>
+
+<!-- Contenedor central en la pantalla -->
+<div class="d-flex align-items-center justify-content-center w-100" style="height: 70vh;">
+    <!-- Contenedor con Bootstrap -->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+            <div class="col">
+                <!-- Tarjeta con información histórica y una imagen -->
+                <div class="card rounded-5 text-light card2">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <!-- Imagen relacionada con la historia -->
+                            <img src="../historia/img/historia.png" class="img-fluid h-100 w-100" alt="...">
+                        </div>
+                        <div class="col-md-5 my-auto">
+                            <div class="card-body text-center">
+                                <!-- Título, descripción y detalles históricos -->
+                                <h5 class="card-title text-center fw-bolder text-light fs-1">Historia</h5>
+                                <hr class="text-light">
+                                <p class="card-text tw-semibold fs-5 text-center">La historia de Tailandia abarca milenios, desde el antiguo Reino de Sukhothai hasta la dinastía Chakri en Bangkok. Tras el esplendor de Ayutthaya y su destrucción por los birmanos, Tailandia vivió una serie de transformaciones políticas en los siglos XIX y XX, incluyendo la abolición de la monarquía absoluta en 1932. Aunque enfrentó presiones coloniales, Tailandia logró mantener su independencia. En tiempos recientes, ha experimentado desarrollo económico, desafíos políticos y tensiones sociales. La figura del rey sigue siendo central en la identidad tailandesa, en una nación que fusiona su rica tradición cultural con un perfil moderno y dinámico en el sudeste asiático.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts de jQuery, Popper y Bootstrap, y AOS (Animate on Scroll) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Inicialización de la animación AOS
+    AOS.init();
+</script>
+</body>
+</html>

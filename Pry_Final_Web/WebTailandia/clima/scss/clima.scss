@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+    background-image: url('../img/fondo2.png');
+    background-size: cover;      /* Ajusta el tamaño para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* Otras propiedades del fondo pueden ir aquí, como la posición */
+}
+
+h1.titulo{
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Agrega estilos CSS para controlar el orden de apilamiento */
+.nav-link-tailandia {
+    position: relative;
+    z-index: 2; /* Este valor puede ajustarse según sea necesario */
+}
+
+
+nav{
+    background-color: transparent;
+    backdrop-filter: blur(.5em);
+}
+
+.card1{
+    --bs-card-bg: rgba(99, 99, 99, 0.061) !important;
+    backdrop-filter: blur(10em);
+    box-shadow: inset 5px 5px 10px rgba(69, 69, 69, 0.51) !important;
+    --bs-card-border-color: transparent !important;
+}
+.card2{
+    --bs-card-bg: rgba(30, 29, 29, 0.782) !important;
+    backdrop-filter: blur(10em);
+    // box-shadow: inset 5px 5px 10px rgba(69, 69, 69, 0.51) !important;
+    --bs-card-border-color: transparent !important;
+}
+
+img{
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em;
+}

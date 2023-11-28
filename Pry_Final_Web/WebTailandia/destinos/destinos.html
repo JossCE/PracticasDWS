@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado HTML -->
+    <meta charset="UTF-8">
+    <!-- Enlace a la hoja de estilos de destino -->
+    <link rel="stylesheet" href="../destinos/scss/destino.scss">
+    <!-- Configuración de la vista para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Enlace a la hoja de estilos de animación -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>    
+    <!-- Enlace a la hoja de estilos de AOS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Título de la página -->
+    <title>Destinos</title>
+</head>
+<body data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark text-dark">
+    <!-- Contenedor de la barra de navegación -->
+    <div class="container-fluid d-flex justify-content-between">
+        <!-- Enlaces a la izquierda -->
+        <ul class="navbar-nav">
+            <li class="nav-item text-start">
+                <!-- Enlace activo de la página actual -->
+                <a class="nav-link active text-light fs-2 ms-1 nav-link-tailandia" aria-current="page" href="../home/inicio.php">Tailandia</a>
+            </li>
+        </ul>
+
+        <!-- Elementos del navbar centrados -->
+        <div class="card rounded-pill text-center mt-2 card1">
+            <div class="card-body" style="background-color: transparent;">
+                <!-- Enlaces de la barra de navegación -->
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../comida/comida.html">Comida</a>
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../historia/historia.html">Historia</a>
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../clima/clima.html">Clima</a>
+                <a class="navbar-brand text-light fs-2 me-5 ms-5" href="../destinos/destinos.html">Destinos</a>
+                <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../contacto/contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <!-- Enlaces a la derecha -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <!-- Botón de registro con animación -->
+                <a class="nav-link text-light" href="../registro/registro.php">
+                    <button class="btn btn-light rounded-pill animate__animated animate__heartBeat animate__delay-2s" style="width: 10em"><label class="fs-5 fw-semibold">Registrarse</label></button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Título de la página -->
+<h1 style="font-size: 100px;" class="fw-bolder text-light text-center titulo mt-4">Destino imperdibles</h1><br>
+
+
+<!-- Contenedor central en la pantalla -->
+<div class="d-flex align-items-center justify-content-center w-100" style="height: 65vh;">
+  <!-- Carrusel Bootstrap -->
+  <div id="carouselExampleIndicators" class="carousel slide animate__animated animate__backInDown" data-ride="carousel" data-interval="5000">
+      <!-- Contenido del carrusel -->
+      <div class="carousel-inner">
+          
+          <!-- Primera Vista (Activa por defecto) -->
+          <div class="carousel-item active">
+              <!-- Contenedor de la tarjeta en una fila con formato responsivo -->
+              <div class="container">
+                  <div class="row row-cols-1 row-cols-md-1 g-5">
+                      <!-- Columna para la tarjeta -->
+                      <div class="col">
+                          <!-- Tarjeta con diseño redondeado y texto claro -->
+                          <div class="card rounded-5 text-light card2">
+                              <div class="row g-0">
+                                  <!-- Columna para la imagen -->
+                                  <div class="col-md-7">
+                                      <!-- Imagen del destino con tamaño fluido -->
+                                      <img src="../destinos/img/bangkok.png" class="img-fluid w-75 h-100" alt="...">
+                                  </div>
+                                  <!-- Columna para el contenido de la tarjeta -->
+                                  <div class="col-md-4 my-auto">
+                                      <!-- Cuerpo de la tarjeta con texto centrado -->
+                                      <div class="card-body text-center">
+                                          <!-- Título de la tarjeta -->
+                                          <h5 class="card-title text-center fw-bolder text-light fs-1">Bangkok</h5>
+                                          <!-- Línea horizontal como separador -->
+                                          <hr class="text-light">
+                                          <!-- Texto descriptivo sobre el destino -->
+                                          <p class="card-text tw-semibold fs-2">La capital de Tailandia es una metrópolis vibrante que combina la modernidad con la tradición. 
+                                              Entre sus atracciones se encuentran el Gran Palacio, el Templo del Buda Esmeralda, mercados 
+                                              flotantes y una animada vida nocturna.</p>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+
+    <!-- Segunda Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/mai.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Chiang Mai</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Ubicada al norte, es famosa por sus templos antiguos, la Puerta de Tha Phae, la 
+                        montaña Doi Suthep y su mercado nocturno.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercera Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/phuket.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Phuket</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">La isla más grande de Tailandia, conocida por sus playas espectaculares, vida nocturna animada y deportes acuáticos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cuarta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/ayut.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Ayutthaya</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Antigua capital del Reino de Ayutthaya, hoy es un sitio arqueológico con templos históricos, estatuas de Buda y un ambiente que evoca la grandeza del pasado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/sukho.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Sukhothai</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Otro sitio histórico importante, conocido por el Parque Histórico de Sukhothai, que alberga templos y ruinas de la antigua capital.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/krabi.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Krabi</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Con impresionantes formaciones rocosas y playas de arena blanca, Krabi es un paraíso para los amantes de la naturaleza y los deportes acuáticos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sexta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/koh.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Koh Phi Phi</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Un archipiélago que incluye las islas Phi Phi Don y Phi Phi Leh, conocidas por sus aguas cristalinas y paisajes impresionantes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Septima Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/huahin.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Hua Hin</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Una popular ciudad balneario en la costa del golfo, famosa por su larga playa, campos de golf y el Palacio de Verano del Rey.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Octava Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/pai.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Pai</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Un tranquilo pueblo en el norte, rodeado de montañas, aguas termales y cascadas, es conocido por su ambiente relajado y artístico.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decima Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/chiang.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Chiang Rai</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Hogar del famoso Templo Blanco (Wat Rong Khun) y el Triángulo Dorado, una región donde convergen las fronteras de Tailandia, Laos y Myanmar.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Onceava Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../destinos/img/kancha.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Kanchanaburi</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Conocido por el Puente sobre el río Kwai, este lugar también alberga parques nacionales, cascadas y la oportunidad de explorar la historia de la Segunda Guerra Mundial.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FIN -->
+  </div>
+</div>
+<!-- Controles del carrusel (carousel) -->
+<a class="carousel-control-prev h-25" href="#carouselExampleIndicators" role="button" data-slide="prev" style="margin-top: 50vh">
+  <!-- Icono de control para retroceder en el carrusel -->
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <!-- Texto de accesibilidad para lectores de pantalla -->
+  <span class="sr-only"></span>
+</a>
+
+<a class="carousel-control-next h-25" href="#carouselExampleIndicators" role="button" data-slide="next" style="margin-top: 50vh">
+  <!-- Icono de control para avanzar en el carrusel -->
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <!-- Texto de accesibilidad para lectores de pantalla -->
+  <span class="sr-only"></span>
+</a>
+
+</div> <!-- Cierre de la etiqueta del contenedor del carrusel -->
+
+<!-- Inclusión de los scripts necesarios -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Inclusión del script para las animaciones AOS (Animate on Scroll) -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Inicialización de AOS -->
+<script>
+AOS.init();
+</script>
+</html>

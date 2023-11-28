@@ -1,0 +1,56 @@
+/* Importa las fuentes de Google Fonts que se utilizarán en la página */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* Establece la fuente predeterminada para todos los elementos en la página */
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+/* Configuración del fondo de la página */
+body {
+    background-image: url('../img/viaje.png');
+    background-size: cover;      /* Ajusta el tamaño para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    /* Otras propiedades del fondo pueden ir aquí, como la posición */
+}
+
+/* Estilos específicos para el elemento con la clase 'titulo' dentro de un elemento h1 */
+h1.titulo {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Agrega estilos CSS para controlar el orden de apilamiento */
+.nav-link-tailandia {
+    position: relative;
+    z-index: 2; /* Este valor puede ajustarse según sea necesario */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: transparent;
+    backdrop-filter: blur(.5em);
+}
+
+/* Estilos para la primera tarjeta con la clase 'card1' */
+.card1 {
+    --bs-card-bg: rgba(99, 99, 99, 0.061) !important;
+    backdrop-filter: blur(10em);
+    box-shadow: inset 5px 5px 10px rgba(69, 69, 69, 0.51) !important;
+    --bs-card-border-color: transparent !important;
+}
+
+/* Estilos para la segunda tarjeta con la clase 'card2' */
+.card2 {
+    --bs-card-bg: rgba(114, 114, 114, 0.266) !important;
+    backdrop-filter: blur(10em);
+    --bs-card-border-color: transparent !important;
+}
+
+/* Estilos para las imágenes */
+img {
+    border-top-left-radius: 2em;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 0em;
+    border-bottom-right-radius: 0em;
+}

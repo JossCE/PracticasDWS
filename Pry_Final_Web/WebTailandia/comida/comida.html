@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configuración del encabezado HTML -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../comida/scss/comida.scss">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Comida</title>
+</head>
+<body data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-dark text-dark">
+    <!-- Contenedor de la barra de navegación -->
+    <div class="container-fluid d-flex justify-content-between">
+        <!-- Enlaces a la izquierda -->
+        <ul class="navbar-nav">
+            <li class="nav-item text-start">
+                <a class="nav-link active text-light fs-2 ms-1 nav-link-tailandia" aria-current="page" href="../home/inicio.php">Tailandia</a>
+            </li>
+        </ul>
+
+        <!-- Enlaces centrados -->
+        <div class="card rounded-pill text-center mt-2 card1">
+            <div class="card-body" style="background-color: transparent;">
+            <a class="navbar-brand text-light fs-2 me-5 ms-5" href="../comida/comida.html">Comida</a>
+            <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../historia/historia.html">Historia</a>
+            <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../clima/clima.html">Clima</a>
+            <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../destinos/destinos.html">Destinos</a>
+            <a class="navbar-brand text-light fs-4 me-5 ms-5" href="../contacto/contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <!-- Enlaces a la derecha -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link text-light" href="../registro/registro.php">
+                    <!-- Botón de registro con animación -->
+                    <button class="btn btn-light rounded-pill animate__animated animate__heartBeat animate__delay-2s" style="width: 10em"><label class="fs-5 fw-semibold">Registrarse</label></button>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Título de la página -->
+<h1 style="font-size: 100px;"  class="fw-bolder text-light text-center titulo mt-4">Comida tipica</h1><br>
+
+<!-- Contenedor central con carrusel -->
+<div class="d-flex align-items-center justify-content-center w-100" style="height: 65vh;">
+    <!-- Carrusel de Bootstrap con animación -->
+    <div id="carouselExampleIndicators" class="carousel slide animate__animated animate__backInDown " data-ride="carousel" data-interval="5000">
+        <div class="carousel-inner">
+            <!-- Contenido de cada vista del carrusel -->
+    <!-- Primera Vista -->
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+                <div class="col-md-7">
+                  <img src="../comida/img/padthai.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 my-auto">
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Pad Thaí</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Un plato de fideos de arroz salteados con camarones, pollo o tofu, y aderezado con tamarindo, cacahuates, limón y chiles.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segunda Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/greencurry.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Green Curry</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Un curry cremoso y picante con leche de coco, pollo, berenjenas, albahaca tailandesa y chiles verdes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tercera Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/tomyum.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Tom Yum</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Una sopa agria y picante con camarones, setas, limón, hojas de lima kaffir y hierbas frescas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cuarta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/somtum.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Som Tum</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Una ensalada hecha con papaya verde rallada, tomates cherry, judías verdes, cacahuetes y aliñada con lima, ajo, chiles y salsa de pescado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/mango.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Mango Sticky Rice</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Una deliciosa combinación de arroz pegajoso cocido al vapor, mango maduro y leche de coco, a menudo rociado con semillas de sésamo tostado.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/massaman.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Massaman Curry</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Un curry más suave y dulce, a menudo preparado con carne de res, patatas, cacahuetes y hojas de lima kaffir.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sexta Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/tomkhagai.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Tom Kha Gai</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Una sopa de coco con pollo, champiñones, galanga, limas y hojas de cilantro.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Septima Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/pad.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Pad Krapow Moo Saap</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Salteado de cerdo picado con albahaca tailandesa, chiles y ajo, servido sobre arroz y a menudo acompañado de un huevo frito.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Octava Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/laab.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Laab</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Una ensalada de carne picada (generalmente pollo, cerdo o ternera) con hierbas frescas, limón, chiles y una pizca de arroz tostado en polvo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decima Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/khaopad.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Khao Pad</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Arroz frito con verduras, huevo, y a menudo pollo, cerdo o camarones, sazonado con salsa de soja y condimentos.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Onceava Vista -->
+    <div class="carousel-item">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-1 g-5">
+          <div class="col">
+            <div class="card rounded-5 text-light card2">
+              <div class="row g-0">
+              <div class="col-md-7">
+                  <img src="../comida/img/satay.png" class="img-fluid w-75 h-100" alt="...">
+                </div>
+                <div class="col-md-4 text-center my-auto">
+                  <div class="card-body">
+                    <h5 class="card-title text-center fw-bolder text-light fs-1">Satay</h5>
+                    <hr class="text-light">
+                    <p class="card-text tw-semibold fs-2">Brochetas de carne (pollo, cerdo o res) marinadas y a la parrilla, servidas con una deliciosa salsa de cacahuetes.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- FIN -->
+  </div>
+</div>
+            <!-- Íconos de control del carrusel -->
+            <a class="carousel-control-prev h-25" href="#carouselExampleIndicators" role="button" data-slide="prev" style="margin-top: 50vh">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next h-25" href="#carouselExampleIndicators" role="button" data-slide="next" style="margin-top: 50vh">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+
+  </div>
+
+    <!-- Scripts de jQuery, Popper y Bootstrap, y AOS (Animate on Scroll) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Inicialización de la animación AOS
+        AOS.init();
+    </script>
+</body>
+</html>
